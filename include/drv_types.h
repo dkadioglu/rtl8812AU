@@ -350,6 +350,11 @@ struct registry_priv
 
 	u8 boffefusemask;
 	BOOLEAN bFileMaskEfuse;
+
+#ifdef CONFIG_SW_LED
+	u8 led_enable;
+#endif
+
 #ifdef CONFIG_AUTO_CHNL_SEL_NHM
 	u8 acs_mode;
 	u8 acs_auto_scan;
