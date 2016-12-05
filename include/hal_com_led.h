@@ -352,6 +352,7 @@ struct led_priv{
 	/* add for led controll */
 };
 
+#ifdef CONFIG_SW_LED
 void rtw_led_control(_adapter *adapter, LED_CTL_MODE LedAction);
 #else //CONFIG_SW_LED
 #define rtw_led_control(adapter, LedAction)
